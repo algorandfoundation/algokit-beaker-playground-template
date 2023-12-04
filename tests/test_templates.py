@@ -7,7 +7,6 @@ from pathlib import Path
 
 import pytest
 
-
 commit_pattern = re.compile(r"_commit: .*")
 src_path_pattern = re.compile(r"_src_path: .*")
 tests_path = Path(__file__).parent
