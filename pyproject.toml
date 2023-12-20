@@ -7,13 +7,13 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-beaker-pyteal = "^1.0.0"
-algokit-utils = "^1.0.0"
+beaker-pyteal = "^1.1.1"
+algokit-utils = "^2.2.0"
 python-dotenv = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
-black = {extras = ["d"], version = "*"}
+black = { extras = ["d"], version = "*" }
 mypy = "*"
 pytest = "^7.3.1"
 
@@ -28,50 +28,51 @@ select = [
   # ones we don't want/need are commented out to make it clear
   # which have been omitted on purpose vs which ones get added
   # in new ruff releases and should be considered for enabling
-  "F",      # pyflakes
-  "E", "W", # pycodestyle
-  "C90",    # mccabe
-  "I",      # isort
-  "N",      # PEP8 naming
-  "UP",     # pyupgrade
-  "YTT",    # flake8-2020
-  "ANN",    # flake8-annotations
+  "F",   # pyflakes
+  "E",
+  "W",   # pycodestyle
+  "C90", # mccabe
+  "I",   # isort
+  "N",   # PEP8 naming
+  "UP",  # pyupgrade
+  "YTT", # flake8-2020
+  "ANN", # flake8-annotations
   # "S",    # flake8-bandit
   # "BLE",  # flake8-blind-except
-  "FBT",    # flake8-boolean-trap
-  "B",      # flake8-bugbear
-  "A",      # flake8-builtins
+  "FBT", # flake8-boolean-trap
+  "B",   # flake8-bugbear
+  "A",   # flake8-builtins
   # "COM",  # flake8-commas
-  "C4",     # flake8-comprehensions
-  "DTZ",    # flake8-datetimez
-  "T10",    # flake8-debugger
+  "C4",  # flake8-comprehensions
+  "DTZ", # flake8-datetimez
+  "T10", # flake8-debugger
   # "DJ",   # flake8-django
   # "EM",   # flake8-errmsg
   # "EXE",  # flake8-executable
-  "ISC",    # flake8-implicit-str-concat
-  "ICN",    # flake8-import-conventions
+  "ISC", # flake8-implicit-str-concat
+  "ICN", # flake8-import-conventions
   # "G",    # flake8-logging-format
   # "INP",  # flake8-no-pep420
-  "PIE",    # flake8-pie
-  "T20",    # flake8-print
-  "PYI",    # flake8-pyi
-  "PT",     # flake8-pytest-style
-  "Q",      # flake8-quotes
-  "RSE",    # flake8-raise
-  "RET",    # flake8-return
-  "SLF",    # flake8-self
-  "SIM",    # flake8-simplify
-  "TID",    # flake8-tidy-imports
-  "TCH",    # flake8-type-checking
-  "ARG",    # flake8-unused-arguments
-  "PTH",    # flake8-use-pathlib
-  "ERA",    # eradicate
+  "PIE", # flake8-pie
+  "T20", # flake8-print
+  "PYI", # flake8-pyi
+  "PT",  # flake8-pytest-style
+  "Q",   # flake8-quotes
+  "RSE", # flake8-raise
+  "RET", # flake8-return
+  "SLF", # flake8-self
+  "SIM", # flake8-simplify
+  "TID", # flake8-tidy-imports
+  "TCH", # flake8-type-checking
+  "ARG", # flake8-unused-arguments
+  "PTH", # flake8-use-pathlib
+  "ERA", # eradicate
   # "PD",   # pandas-vet
-  "PGH",    # pygrep-hooks
-  "PL",     # pylint
+  "PGH", # pygrep-hooks
+  "PL",  # pylint
   # "TRY",  # tryceratops
   # "NPY",  # NumPy-specific rules
-  "RUF",    # Ruff-specific rules
+  "RUF", # Ruff-specific rules
 ]
 ignore = [
   "ANN101", # no type for self
@@ -81,18 +82,18 @@ ignore = [
 ]
 # Exclude a variety of commonly ignored directories.
 exclude = [
-    ".direnv",
-    ".git",
-    ".mypy_cache",
-    ".ruff_cache",
-    ".venv",
-    "__pypackages__",
-    "_build",
-    "build",
-    "dist",
-    "node_modules",
-    "venv",
-    "docs/sphinx",
+  ".direnv",
+  ".git",
+  ".mypy_cache",
+  ".ruff_cache",
+  ".venv",
+  "__pypackages__",
+  "_build",
+  "build",
+  "dist",
+  "node_modules",
+  "venv",
+  "docs/sphinx",
 ]
 per-file-ignores = {}
 # Allow unused variables when underscore-prefixed.
