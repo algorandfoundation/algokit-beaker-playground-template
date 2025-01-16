@@ -97,7 +97,14 @@ def run_init(
     return result
 
 
+@pytest.mark.skip(reason="This test is deprecated since the template is deprecated")
 def test_default_parameters(working_dir: Path) -> None:
     response = run_init(working_dir, "test_default_parameters")
 
     assert response.returncode == 0
+
+
+def test_template_fail(working_dir: Path) -> None:
+    response = run_init(working_dir, "test_template_fail")
+
+    assert response.returncode == 1

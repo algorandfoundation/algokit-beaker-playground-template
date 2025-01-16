@@ -1,5 +1,11 @@
 # AlgoKit Playground Template
 
+---
+# DEPRECATED
+This template has been deprecated. Beaker for Algorand Smart Contract development is no longer supported. Please use Algorand Python instead. The Algorand Python template can be found at https://github.com/algorandfoundation/algokit-python-template.
+
+## Introduction
+
 This template provides a good starting point to quickly play with writing, building and deploying/calling Beaker and PyTEAL contracts.
 
 This is one of the default templates used by AlgoKit to initialise an Algorand smart contract project. It's a [Copier template](https://copier.readthedocs.io/en/stable/).
