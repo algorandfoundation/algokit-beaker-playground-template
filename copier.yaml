@@ -1,5 +1,23 @@
 _subdirectory: template_content
 
+use_deprecated_template:
+  type: bool
+  help: |
+    WARNING: This template has been deprecated. Beaker for Algorand Smart Contract development is no longer supported.
+    Please use Algorand Python instead. The Algorand Python template can be found at https://github.com/algorandfoundation/algokit-python-template
+    Do you still want to proceed with using the deprecated template?
+  default: no
+
+_tasks:
+  - '"{{ python_path if python_path else _copier_python }}" post_init.py {{ use_deprecated_template }} {{ use_workspace }}'
+
+# Auto determined by algokit-cli from v1.11.3 to allow execution of python script
+# in binary mode.
+python_path:
+  type: str
+  help: Path to the sys.executable.
+  when: false
+
 # The following should never get prompted; algokit should always pass these values through by convention
 
 algod_token:
